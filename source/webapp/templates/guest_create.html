@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Guest create page{% endblock %}
+{% block nav %}<li class="nav-item">
+          <a class="nav-link" href='{% url "main_page" %}'>Return back</a>
+        </li>{% endblock %}
+{% block content %}
+<h1>Create Guest's card</h1>
+
+<form method="post">
+    {% include "partial/form.html" with button_text="Create" %}
+</form>
+{% endblock %}

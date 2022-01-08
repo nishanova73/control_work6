@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Guests' page{% endblock %}
+{% block content %}
+<h1>📚👤Guests' book👤📚</h1></br>
+    {% for guest in guests %}
+        <p>
+        <h3>{{ guest.name }} ({{guest.email}})
+    {% load static %}
+            <a href='{% url "guest_update" guest.pk %}'><img style="width: 20px; height: 20px;" src="{% static 'img/images.png' %}" alt=""></a>
+            <a href='{% url "guest_delete" guest.pk %}'><img style="width: 20px; height: 20px;" src="{% static 'img/image2.jpeg' %}" alt=""></a></h3>
+        <h4>{{ guest.text }}</h4>
+        <h5>{{ guest.status }}</h5>
+        </p></br>
+    {% endfor %}
+{% endblock %}
