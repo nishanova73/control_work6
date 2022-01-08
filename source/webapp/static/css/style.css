@@ -1,0 +1,21 @@
+body{
+    background-color: darkslategrey;
+    color: darkcyan;
+    font-family: "fangsong";
+    text-align: center;
+}
+
+h3{
+    font-family: "Euphemia UCAS";
+}
+
+h1{
+    font-family: "Euphemia UCAS";
+}
+
+.link{
+	border:1px solid #ccc;
+	background:#eaeaea;
+	padding: 10px 10px;
+	text-decoration: none;
+}
